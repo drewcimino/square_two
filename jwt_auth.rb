@@ -45,7 +45,7 @@ module Authentication
 
     def payload(username)
       {
-        exp: Time.now.to_i + 60 * 60 * 24,
+        exp: Time.now.to_i + 60 * 60 * ENV['JWT_EXP_HOURS'],
         iat: Time.now.to_i,
         iss: ENV['JWT_ISSUER'],
         user: {
