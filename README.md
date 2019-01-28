@@ -5,6 +5,7 @@ This is a quick place to get started when you're building a Sinatra app with JWT
 ### How to use it
 
 - Clone this project
+- Set your own Authentication::ENTITY_LIST in jwt_auth.rb
 - `rm -r .git`
 - `git init`
 
